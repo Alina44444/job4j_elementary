@@ -1,8 +1,16 @@
 package ru.job4j.calculator;
-public class Calculator {
+ class ArgMethod {
+
+    public static void hello(String name, int age) {
+        System.out.println("Hello, " + name + ", age = " + age);
+    }
+
     public static void main(String[] args) {
-       int size = 10;
-       size = 100;
-       size = size - 5;
+        String name = "Job4j";
+        int age = 6;
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
     }
 }
