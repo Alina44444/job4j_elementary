@@ -1,4 +1,5 @@
 package ru.job4j.calculator;
+
  class ArgMethod {
 
     public static void hello(String name, int age) {
