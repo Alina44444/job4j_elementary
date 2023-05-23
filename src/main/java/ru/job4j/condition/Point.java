@@ -8,6 +8,6 @@ public class Point {
 
     public static void main(String[] args) {
         double result = Point.distance(50, 154, 222, 42);
-        System.out.println("result (50, 154) to (222, 42) " + result);
+        System.out.println("Result (50, 154) to (222, 42) " + result);
     }
 }
