@@ -37,4 +37,15 @@ public class PointTest {
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when2627to6977then65dot94694837519019() {
+        double expected = 65.94694837519019;
+        int x1 = 26;
+        int y1 = 27;
+        int x2 = 69;
+        int y2 = 77;
+        double out = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
