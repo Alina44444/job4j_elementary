@@ -40,9 +40,9 @@ public class ChessBoardTest {
     @Test
     public void t() {
         int x1 = 1;
-        int y1 = 3;
+        int y1 = 4;
         int x2 = 2;
-        int y2 = 3;
+        int y2 = 2;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 0;
         assertThat(result).isEqualTo(expected);
@@ -67,6 +67,17 @@ public class ChessBoardTest {
         int y2 = 2;
         int result = ChessBoard.way(x1, y1, x2, y2);
         int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void we22() {
+        int x1 = 4;
+        int y1 = 4;
+        int x2 = 2;
+        int y2 = 4;
+        int result = ChessBoard.way(x1, y1, x2, y2);
+        int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
 
