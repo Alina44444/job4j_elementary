@@ -19,4 +19,12 @@ public class FactorialTest {
         int out = Factorial.calc(n);
         assertThat(out).isEqualTo(expected);
     }
+
+    @Test
+    void whenCalculateFactorialForSixThenSevenHundredTwenty() {
+        int expected = 720;
+        int n = 6;
+        int out = Factorial.calc(n);
+        assertThat(out).isEqualTo(expected);
+    }
 }
