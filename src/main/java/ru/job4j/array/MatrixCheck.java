@@ -22,4 +22,17 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        int indexOne = 0;
+        for (char[]indexTwo : board) {
+            if (indexTwo[indexOne] == 'X' && (monoHorizontal(board, indexOne) || monoVertical(board, indexOne))) {
+                result = true;
+                break;
+            }
+            indexOne++;
+        }
+        return result;
+    }
 }
