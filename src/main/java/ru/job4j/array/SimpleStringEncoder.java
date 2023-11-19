@@ -5,15 +5,15 @@ public class SimpleStringEncoder {
         String result = "";
         int counter = 1;
         char symbol = input.charAt(0);
-        for (int i = 0; i < input.length(); i++) {
-            if (i < input.length() - 1 && input.charAt(i + 1) == symbol) {
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) == symbol) {
                 counter++;
             } else {
                 result = counter == 1 ? result + symbol : result + symbol + counter;
                 counter = 1;
-                symbol = i < input.length() - 1 ? input.charAt(i + 1) : symbol;
+                symbol = input.charAt(i);
             }
         }
-        return result;
+        return counter == 1 ? result + symbol : result + symbol + counter;
     }
 }
