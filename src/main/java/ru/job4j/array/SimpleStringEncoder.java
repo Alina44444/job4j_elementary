@@ -5,6 +5,7 @@ public class SimpleStringEncoder {
         String result = "";
         int counter = 1;
         char symbol = input.charAt(0);
+        System.out.println("push");
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
                 counter++;
